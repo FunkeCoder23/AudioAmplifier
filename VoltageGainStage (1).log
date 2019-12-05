@@ -1,6 +1,6 @@
 Questionable use of curly braces in "v§signal in 0 sine(0 {vsig} 261.626) rser=50"
     Error: undefined symbol in: "[vsig]"
-Circuit: * C:\Users\newma\Desktop\AudioAmplifier-master\AudioAmplifier-master\VoltageGainStage (1).asc
+Circuit: * C:\Users\Jaret\Documents\MEGAsync\School\Physical Electronics - 19\Project 3\AudioAmplifier\VoltageGainStage (1).asc
 
 Error on line 6 : v§signal in 0 sine(0 (vsig) 261.626) rser=50
 	 Unknown parameter "vsig"
@@ -28,8 +28,8 @@ Ft:       4.01e+08
 
 
 
-Date: Thu Dec 05 16:39:04 2019
-Total elapsed time: 0.049 seconds.
+Date: Thu Dec 05 16:56:46 2019
+Total elapsed time: 0.056 seconds.
 
 tnom = 27
 temp = 27
