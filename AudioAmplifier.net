@@ -1,0 +1,31 @@
+* C:\Users\Jaret\Documents\MEGAsync\School\Physical Electronics - 19\Project 3\AudioAmplifier\AudioAmplifier.asc
+VCC N001 0 6
+C§DCB_2 N007 N006 100µ
+RB1 N001 N007 665
+RB2 N007 N010 100
+RE3 N004 N010 60
+R§Speaker OUT 0 32
+V§Signal IN 0 SINE(0 {vSIG} 261.626) Rser=50
+C§DCB_4 OUT N004 100µ
+RV2 N006 0 10
+RV1 N006 N005 10
+C§DCB_1 N005 IN 100µ
+RE1 N008 N010 99
+R1 N009 N010 31
+C§DCB_3 N008 N009 100µ
+RC1 N001 N003 775
+RE2 N001 N002 100
+Q1 N003 N007 N008 0 2N3904
+Q3 N001 N002 N004 0 2N3904
+Q2 N010 N003 N002 0 2N3906
+VEE 0 N010 6
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Jaret\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.step dec param vSIG 2.828m 282.8m 10
+.tran 0 0.08791175 0.07644500 0.00382225
+.meas TRAN vOUTp PP 0.5*V(OUT)
+.meas TRAN gain PP 0.5*V(OUT)/vSIG
+.op
+.backanno
+.end
