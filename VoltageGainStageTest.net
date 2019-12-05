@@ -1,22 +1,22 @@
-* F:\Users\Aaron\Documents\UAkron\2019-20\Phys Elec\Project 3\VoltageGainStage.asc
+* F:\Users\Aaron\Documents\UAkron\2019-20\Phys Elec\Project 3\VoltageGainStageTest.asc
 VCC N001 0 6
-RB1 N001 N003 30k
-RB2 N003 N006 4.5k
+RB1 N001 N003 750
+RB2 N003 N006 130
 R§Meter OUT 0 10Meg
 V§Signal IN 0 SINE(0 {vSIG} 261.626) Rser=50
 C§DCB_Meter OUT N002 100µ
 C§DCB_1 N003 IN 100µ
-RE1 N004 N006 1k
-R1 N005 N006 100
+RE1 N004 N006 50
+R1 N005 N006 25
 C§DCB_3 N004 N005 100µ
-RC1 N001 N002 7k
+RC1 N001 N002 300
 Q1 N002 N003 N004 0 2N3904
 R§OutputStage N002 0 10k
 VEE 0 N006 6
 .model NPN NPN
 .model PNP PNP
 .lib F:\Users\Aaron\Documents\LTspiceXVII\lib\cmp\standard.bjt
-.step dec param vSIG 2.828m 282.8m 10
+.step dec param vSIG 2.828m 565.6m 20
 .tran 0 0.08791175 0.07644500 0.00382225
 .meas TRAN vOUTrms RMS V(OUT)
 .meas TRAN gain PP 0.5*V(OUT)/vSIG
