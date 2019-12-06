@@ -21,9 +21,9 @@ VEE 0 N010 6
 .model NPN NPN
 .model PNP PNP
 .lib F:\Users\Aaron\Documents\LTspiceXVII\lib\cmp\standard.bjt
-.step dec param vSIG 2.828m 282.8m 10
+.step dec param vSIG 2.828m 282.8m 40
 .tran 0 0.08791175 0.07644500 0.00382225
-.meas TRAN vOUTp PP 0.5*V(OUT)
+.meas TRAN vOUTrms RMS V(OUT)
 .meas TRAN gain PP 0.5*V(OUT)/vSIG
 .op
 .backanno
